@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //Incorrect use of innerHTML with an element that doesn't exist
+    document.getElementById('nonExistentElement').innerHTML = "Hello"; 
+    // This line will throw an error because it tries to access an element that does not exist
+    document.getElementById("myDiv").innerHtml = "<p>This is a paragraph.</p>";
+  </script>
+</body>
+</html>
