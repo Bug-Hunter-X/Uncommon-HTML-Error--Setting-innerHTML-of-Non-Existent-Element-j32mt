@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    const element = document.getElementById('myDiv');
+    if (element) {
+      element.innerHTML = "<p>This is a paragraph.</p>";
+    } else {
+      console.error('Element with id "myDiv" not found.');
+    }
+  </script>
+</body>
+</html>
